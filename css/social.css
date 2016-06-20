@@ -1,0 +1,55 @@
+
+@font-face {
+  font-family: 'entypo';
+  font-style: normal;
+  font-weight: normal;
+  src: url('http://weloveiconfonts.com/api/fonts/entypo/entypo.eot');
+  src: url('http://weloveiconfonts.com/api/fonts/entypo/entypo.eot?#iefix') format('eot'), 
+  url('http://weloveiconfonts.com/api/fonts/entypo/entypo.woff') format('woff'), 
+  url('http://weloveiconfonts.com/api/fonts/entypo/entypo.ttf') format('truetype'), 
+  url('http://weloveiconfonts.com/api/fonts/entypo/entypo.svg#entypo') format('svg');
+}
+
+section #services {
+  text-align: center;
+  transform: translatez(0);
+}
+section #services h2 {
+  margin: 20px 0px 20px;
+  color: black;
+  font-size: 1.2em;
+  font-family: 'Raleway Dots', sans-serif;
+  text-align: center;
+}
+section #services li {
+  width: 120px;
+  height: 140px;
+  display: inline-block;
+  margin: 20px;
+  list-style: none;
+}
+section #services li div {
+  width: 120px;
+  height: 120px;
+  color: #ffffff;
+  font-size: 3.4em;
+  text-align: center;
+  line-height: 120px;
+  background-color: #4da6ff;
+  transition: all 0.5s ease;
+}
+section #services li div:hover {
+  transform: rotate(360deg);
+  border-radius: 100px;
+}
+section #services li span {
+  width: 120px;
+  height: 20px;
+  display: block;
+  padding: 15px 0px;
+  color: #4da6ff;
+  font-family: 'Advent Pro', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  text-align: center;
+}
