@@ -1,6 +1,6 @@
 
 
-.exp p,footer a,footer p{color:#262626}h3{font-size:18px;color:#004d40;margin:0 0 15px 5px}h4{line-height:30px;font-size:18px;margin-top:0px}h5{clear:both;font-size:16px;line-height:25px}
+.exp p,footer a,footer p{color:#262626}h3{font-size:18px;color:#004d40;margin:0 0 15px 5px}h4{line-height:30px;font-size:18px;margin-top:0px}h4 a{line-height:30px;font-size:18px;margin-top:0px}h5{clear:both;font-size:16px;line-height:25px}
 
 .fa{margin-right:2px}
 
@@ -11,3 +11,6 @@ h4 a,h5 a{font-size:14px;border:1px solid #4db6ac;padding:1px 3px;-webkit-border
 .exp ul>li{margin:0 0 8px}.efe .task4img img{height:97px;width:inherit}footer{margin:5px 0 20px}footer p{font-size:14px}
 
 
+.sidebar,.sidebar a,aside a{color:#fff}
+
+.sidebar,aside li{background:#4d79ff}li,ul{list-style:none}a{text-decoration:none}dd,dt,h1,h2,h3,h4,h5,p{cursor:default}aside{position:fixed;right:0;top:30%;z-index:2}aside li{margin-bottom:10px;-webkit-border-radius:10px 0 0 10px;border-radius:10px 0 0 10px;-webkit-box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12)}aside a{display:inline-block;width:120px;height:38px;line-height:38px;padding-left:10px}

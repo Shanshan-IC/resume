@@ -1,30 +1,135 @@
-.spinner { margin: 100px auto; width: 32px; height: 32px; position: relative; } 
+@import "compass/css3";
 
-.cube1, .cube2 { margin-left: 400px; margin-top: 300px;
+$prefixes:"-webkit-" "-moz-" "-ms-" "-o-" "";
 
-  background-color: #FFFF00; width: 100px; height: 100px; position: absolute; top: 0; left: 0; -webkit-animation: cubemove 1.8s infinite ease-in-out; animation: cubemove 1.8s infinite ease-in-out; } 
+.wrap{
+  width:240px;
+  margin:100px auto;
+}
+.loader{
+  list-style:none;
+  li{
+    $size:20px;
+    height:$size;
+    line-height:$size;
+    width:$size;
+    float:left;
+    margin-right:8px;
+    text-align:center;
 
-.cube2 { -webkit-animation-delay: -0.9s; animation-delay: -0.9s; } @-webkit-keyframes cubemove { 25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) } 50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) } 75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) } 100% { -webkit-transform: rotate(-360deg) } } @keyframes cubemove { 25% { transform: translateX(42px) rotate(-90deg) scale(0.5); -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5); } 50% { transform: translateX(42px) translateY(42px) rotate(-179deg); -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg); } 50.1% { transform: translateX(42px) translateY(42px) rotate(-180deg); -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg); } 75% { transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5); -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5); } 100% { transform: rotate(-360deg); -webkit-transform: rotate(-360deg); } }
-
-
-td.school{
-	font-family: Verdana, sans-serif;
-    font-weight: bold;
-    vertical-align: bottom;
-	font-size:22px;
-	color:#666699;
-	width:300px;
+    @include border-radius(50%);
+	  @include box-shadow(0 2px 4px rgba(0,0,0,.35), inset 0 0 9px 4px rgba(0,82,120,.44)); 
+    @include background-image(linear-gradient(bottom, rgb(92, 196, 235), rgb(148, 229, 255) 66%, rgb(149, 229, 255) 67%, rgb(85, 165, 198)));
+    
+    &:before{
+      content:"";
+      position:absolute;
+      top:0px;
+      left:3px;
+      right:3px;
+      height: 12px;
+      @include border-radius(8px 8px 6px 6px/8px);
+      @include background-image(linear-gradient(bottom, rgba(255,255,255,0), #fff));
+    }
+  }
 }
 
-td.major{
-	font-family: Verdana, sans-serif;
-    font-style: italic;
-    vertical-align: bottom;
-	font-size:20px;
-	color:#0d0d0d;
+@for $i from 1 through 7{
+  li:nth-child(#{$i}){
+    @each $prefix in $prefixes{
+      #{$prefix}animation: upAndDown#{$i} 2s linear infinite;
+    }
+  }
 }
 
-td.time{
-	vertical-align: top;
+@mixin animation($vendor, $start){
+  $offset: $start;
+  $add: true;
+
+  @for $i from 0 through 20{
+
+    #{$i * 5}#{"%"}{
+
+      #{$vendor}transform:translate(0em, #{$offset * 3}#{"em"}) scale(0.8 + $offset);
+
+      @if($add){
+        $offset: $offset + 0.1;
+      }@else{
+        $offset: $offset - 0.1;
+      }
+
+      @if($offset == 0.5){
+        $add:false;
+      }
+      @if($offset == -0.5){
+        $add:true;
+      }
+    }
+  }
 }
 
+@-webkit-keyframes upAndDown1{
+  @include animation("-webkit-", 0.1);
+}
+@-webkit-keyframes upAndDown2{
+  @include animation("-webkit-", 0);
+}
+@-webkit-keyframes upAndDown3{
+  @include animation("-webkit-", -0.1);
+}
+@-webkit-keyframes upAndDown4{
+  @include animation("-webkit-", -0.2);
+}
+@-webkit-keyframes upAndDown5{
+  @include animation("-webkit-", -0.3);
+}
+@-webkit-keyframes upAndDown6{
+  @include animation("-webkit-", -0.4);
+}
+@-webkit-keyframes upAndDown7{
+  @include animation("-webkit-", -0.5);
+}
+
+@-moz-keyframes upAndDown1{
+  @include animation("-moz-", 0.1);
+}
+@-moz-keyframes upAndDown2{
+  @include animation("-moz-", 0);
+}
+@-moz-keyframes upAndDown3{
+  @include animation("-moz-", -0.1);
+}
+@-moz-keyframes upAndDown4{
+  @include animation("-moz-", -0.2);
+}
+@-moz-keyframes upAndDown5{
+  @include animation("-moz-", -0.3);
+}
+@-moz-keyframes upAndDown6{
+  @include animation("-moz-", -0.4);
+}
+@-moz-keyframes upAndDown7{
+  @include animation("-moz-", -0.5);
+}
+
+@keyframes upAndDown1{
+  @include animation("", 0.1);
+}
+@keyframes upAndDown2{
+  @include animation("", 0);
+}
+@keyframes upAndDown3{
+  @include animation("", -0.1);
+}
+@keyframes upAndDown4{
+  @include animation("", -0.2);
+}
+@keyframes upAndDown5{
+  @include animation("", -0.3);
+}
+@keyframes upAndDown6{
+  @include animation("", -0.4);
+}
+@keyframes upAndDown7{
+  @include animation("", -0.5);
+}

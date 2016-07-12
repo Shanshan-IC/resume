@@ -1,249 +1,419 @@
+  <!DOCTYPE html>
+  <html lang="en">
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>About Shanshan Fu</title>
-  <meta name="author" content="bh-lay" />
-  <meta name="description" content="Shanshan Fu, A Young Developer" />
-  <meta name="keywords"  content="Shanshan Fu, A Young Developer" />
-  <meta content="width=device-width, initial-scale=1, user-scalable=0" name="viewport">
-  <link rel="stylesheet" href="css/page.css">
-  <link rel="stylesheet" href="css/loading.css">
-  <link rel="stylesheet" href="css/social.css">
-  <link rel="stylesheet" href="css/style.min.css">
- <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-<script src="js/prefixfree.min.js"></script>
-</head>
+  <head>
+
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>Shanshan Fu</title>
+
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/freelancer.min.css" rel="stylesheet">
+      <link href="css/social.css" rel="stylesheet">
+      <link href="css/style.min.css" rel="stylesheet">
+      <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+      <link rel = "stylesheet" href = "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+      <link href="css/pokemongo.css" rel="stylesheet">
+      <link href="css/skill.css" rel="stylesheet">
+  <link href="css/achieve.css" rel="stylesheet">
+  <link href="css/loading.css" rel="stylesheet">
 
 <body>
 
-<div class="section " id="header">
-  <div class="header_body">
-    <div class="intro wow bounceInUp">
-      <img src="image/engineering.jpg">
-      <h1>I am Shanshan Fu</h1>
-      <p>A Young Developer, Enjoying solving the puzzles</p>
-      <p><a href="/" class="btn" target="_self">Go back to the homepage</a></p>
-    </div>
-  </div>
-  <div class="down wow bounceInUp" data-wow-delay=".5s">
-    <a href="javascript:void(0)"><i class="l-icon l-icon-down-double"></i></a>
-  </div>
-</div>
+      <aside>
+          <ul>
+              <li>
+                  <a href="https://github.com/Shanshan-IC/resume" target="_blank">View Code</a>
+              </li>
+              <li>
+                  <a href="resume-ShanshanFu.pdf" target="_blank">PDF download</a>
+              </li>
+              <li>
+                  <a href="https://github.com/Shanshan-IC" target="_blank">GitHub</a>
+              </li>
+          </ul>
+      </aside>
 
-<div class="section" id="binfo">
-  <div class="wrap">
-    <div class="intro wow fadeInDown">
-      <h2>Education Info</h2>
-      <table style = "width:100%">
-        <tr>
-          <td style = "height: 45px" class="school">Imperial College London</td>
-          <td class="major">Msc Computing Science</td>
-        </tr>
-        <tr>
-          <td class="time"> Oct 2015 - Sep 2016 (Ongoing)</td>
-        </tr>
+      <!-- Navigation -->
+      <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+          <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header page-scroll">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                  </button>
+                  <a class="navbar-brand" href="#page-top">Shanshan Fu</a>
+              </div>
 
-        <tr>
-          <td style = "height: 45px" class="school">Wuhan University</td>
-          <td class="major">Bsc Geography Base Class(Focuse on GIS, GPS and RS)</td>
-        </tr>
-        <tr>
-          <td class="time"> Sep 2011 - Jun 2011 (GPA: 3.5 / 4)</td>
-          <td class="time"> Average score(85.92%), AdvancedMathematics(96%), Probability Theory and Statistics(96%), Linear Algebra(88%), C programming(90%), Database(79%) </td>
-        </tr>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li class="hidden">
+                          <a href="#page-top"></a>
+                      </li>
+                      <li class="page-scroll">
+                          <a href="#page-top"> Home</a>
+                      </li>
+                      <li class="page-scroll">
+                          <a href="#education">Education Info</a>
+                      </li>
+                      <li class="page-scroll">
+                          <a href="#about">Internships</a>
+                      </li>
+                      <li class="page-scroll">
+                          <a href="#work">Projects</a>
+                      </li>
+                      <li class="page-scroll">
+                          <a href="#skill">Skills</a>
+                      </li>
+                      <li class="page-scroll">
+                          <a href="#achievement">Achievements</a>
+                      </li>
+                      <li class="page-scroll">
+                          <a href="#contact">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
 
-        <tr>
-          <td style = "height: 45px" class="school">Online Education</td>
-          <td class="major"><a href="https://www.coursera.org/course/ml" target="_blank">Machine Learning - Stanford University</a></td>
-        </tr>
-        <tr>
-          <td class="time"></td>
-          <td class="major"><a  href="https://www.udemy.com/complete-ios-developer-course/" target="_blank">The Complete iOS8 and Swift Course: Learn by Building 15 Apps</a></td>
-        </tr>
-      </table>
+      <!-- Header -->
+      <header>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <img class="img-responsive" src="img/img_self.png" alt="">
+                      <div class="intro-text">
+                          <span class="name">I am Shanshan Fu</span>
+                          <br>
+                          <br />
+                          <embed name="music" loop="true" hidden="true" src="music.mp3"></embed>
+                          <span class="skills"> A Young Developer, Enjoying Solving The Puzzles</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </header>
 
-      <br/>
-      <h3>Now I am doing my Individual Porject in Chelsea and Westminster Hospital, London</a></h3>
-      <a href="https://github.com/Shanshan-IC/MscProject" target="_blank">Software Development -- image analysis to the early detection of pressure ulcers</a>
-    </div>
-    <div class="zhuomianbaidu wow fadeInUp">
-      <img src="image/PUimage.jpg">
-    </div>
-  </div>
-</div>
+      <!-- Education section -->
+      <section id="education">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 text-center">
+                      <h2>Education Info</h2>
+                      <br>
+                          <br />
+                  </div>
+              </div>
+              <div class="row">
+                      <div class="col-sm-2">
+                      <img src="img/imperial.png">
+                      <br>
+                      <br />
+                      <img src="img/whu.png" >                   
+                      <br>
+                      <br />
+                      <img src="img/coursera.png">
+                      </div>
+                      <div class="col-sm-5">
+                          <p> Imperial College London </p>
+                          <p> - Msc Computing Science</p>
+                          <br>
+                          <br />
+                          <p> Wuhan University </p>
+                          <p> - Bsc Geography(Focuse on GIS, GPS and RS)</p>
+                          <br>
+                          <br />
+                          <p><a href="https://www.coursera.org/course/ml" target="_blank"> Machine Learning - Stanford University </a></p>
+                          <p><a href="https://www.udemy.com/complete-ios-developer-course/" target="_blank"> The Complete iOS8 and Swift Course: Learn by Building 15 Apps </a></p>
+                      </div>
+                      <div class="col-sm-5">
+                      <p> Oct 2015 - Sep 2016 (Ongoing) </p>
+                      <p> Merit </p>
+                      <br>
+                      <br />
+                      <p>Sep 2011 - Jun 2011 (GPA: 3.5 / 4)</p>
+                      <p> Average score(85.92%) </p>
+                      </div>
+              </div>
+              <p> Now I am doing my Individual Porject in <a href="http://www.chelwest.nhs.uk/" target="_blank">Chelsea and Westminster Hospital,
+              <p><a href="https://github.com/Shanshan-IC/MscProject" target="_blank"> Software Development -- image analysis to the early detection of pressure ulcers
+              </a> </p>
+          </div>
+      </section>
 
+      <!-- About Section -->
+      <section class="success" id="about">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 text-center">
+                      <h2>Work Experiences</h2>
+          
+          <div class="col-sm-3">
+            <div class="thumbnail">
+              <img src="img\ctrip.png" width="200" height="150">
+              <a><strong><p>Ctrip</strong></p></a>
+              <a><p>Operation Analyst Intern</p></a>
+              <div id="EmergentDetail" class="collapse">
+                  <a><p><strong>Type</strong> : Data Analyst</p></a>
+                  <a><p>During: 06. 2014 - 09. 2014</p></a>
+              </div>
+              <button type="button" class="btn btn-default btn-lg" data-toggle="collapse" data-target="#EmergentDetail">Detail</button>
+              <a href="http://ctrip.com" target="_blank"></a>
+                  <button class="btn btn-warning btn-lg">View Company</button>
+              </a>
+            </div>
+          </div>
 
-<div class="section" id="design">
-  <div class="wrap">
-  <div class="intro wow fadeInDown">
-    <h3>Projects</h3>
-      <ul class="exp">
-        <li>
-            <h4>
-              Pressure Ulcer Image Process Software（2016.05）
-                <a href="https://github.com/Shanshan-IC/MscProject/tree/master/PUimageV.1.0" target="_blank"><i class="fa fa-link" aria-hidden="true"></i>View Code</a>
-                <a href="https://github.com/Shanshan-IC/MscProject/tree/master/PUimageV.1.0/VB%20version" target="_blank"><i class="fa fa-link" aria-hidden="true"></i>Demo</a>
-            </h4>
-            Emphasis is placed on implementing a range of image processing to the software and image analysis techniques using a standard software package.
-            <br/>
-            <img src="image/PUimage.jpg">
-        </li>
-      </ul>
-
-      <ul class="exp">
-        <li>
-            <h4>
-              the Computing Science Learning Website（2016.03）
-                <a href="https://github.com/Shanshan-IC/MyWebsite" target="_blank"><i class="fa fa-link" aria-hidden="true"></i>View Code</a>
-                <a href="https://myweb33.firebaseapp.com/" target="_blank"><i class="fa fa-link" aria-hidden="true"></i>Demo</a>
-            </h4>
-            It’s based on Bootstrap, and the idea is to integrate famous computing learning websites resources to this web. However, it hasn’t been finished due to the schedule.
-            And an amazing part is “<a href="https://myweb33.firebaseapp.com/explore.html">explore part</a>”. 
-            <br/>
-            <img src="image/CSweb.png">
-        </li>
-      </ul>
-
-      <ul class="exp">
-        <li>
-            <h4>
-              Personal Resume based on html and css（2016.06）
-                <a href="https://github.com/Shanshan-IC/resume" target="_blank"><i class="fa fa-link" aria-hidden="true"></i>View Code</a>
-                <a href="https://resume33.firebaseapp.com/" target="_blank"><i class="fa fa-link" aria-hidden="true"></i>Demo</a>
-            </h4>
-            Personal online resume
-            <br/>
-            <img src="image/resume.png">
-        </li>
-      </ul>
-</div>
-  </div>
-</div>
-
-<div class="section">
-  <div class="wrap">
-    <div class="half wow fadeInLeftBig">
-      <h2>Working Experiences</h2>
-      Assistant Product Manager in <a href="opera.com" target="_blank">Opera</a>
-      <br/>
-      Operation Analyst Intern in <a href ="Ctrip.com" target="_blank">Ctrip</a>
-    </div>
-
-    <div class="half wow fadeInRight">
-      <img src="image/opera.png"/>
-      <img src ="image/ctrip.png"/>
-      <br/>
-      These two experiences motivated me to start Computing Science course in Imperial College.
-      <a href="https://myweb33.firebaseapp.com/About" target="_blank">Why CS</a>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="section" id="design">
-  <div class="wrap">
-  <h2>Contact Me</h2>
-  <section>
-  <ul id='services'>
-    
-    <h2>Staying alone is a form of art, since I could connect with myself -- My bset friend forever.</h2>
-    <h2>And I also a team player, since we have the same enemy -- Bugs, and share our differences.</h2>
-    <li>
-      <a href="https://github.com/Shanshan-IC" target="_blank">
-      <div> <img src="image/github-with-circle.svg" /></div>
-      <span>Github</span>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.linkedin.com/in/shanshan-fu-549230107?trk=hp-identity-name" target="_blank">
-      <div> <img src="image/linkedin-with-circle.svg" /></div>
-      <span>LinkedIn</span>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.facebook.com/fu.shanshan.33" target="_blank">
-      <div> <img src="image/facebook-with-circle.svg" /></div>
-      <span>Facebook</span>
-      </a>
-    </li>
-    <li>
-      <a href="https://twitter.com/Sunny_433" target="_blank">
-      <div> <img src="image/twitter-with-circle.svg" /></div>
-      <span>Twitter</span>
-      </a>
-    </li>
-
-  </ul>
-</section>
-</div>
-</div>
-
-
-
-
-<div class="section_loading">
-<div class="cube1"></div>
-<div class="cube2"></div>
-
-<p>Loading...</p></div>
-
-<script src="//dn-lay.qbox.me/build/aboutme/asset/jquery.min_a6ffa58.js"></script>
-<script src="js/Chart.js"></script>
-
-<script src="//dn-lay.qbox.me/build/aboutme/asset/wow.min_033f18c.js"></script>
-<script src="//dn-lay.qbox.me/build/aboutme/asset/jquery-github-user-widget_73bb7a2.js"></script>
-<script src="//dn-lay.qbox.me/build/aboutme/asset/gallery_f53388d.js"></script>
-<script src="http://weloveiconfonts.com/api/?family=entypo"></script>
-<script type="text/javascript">
-  $(function(){
-    new WOW({
-      animateClass: 'animated',
-      offset: 150
-    }).init();
-    $('.section_loading').fadeOut(400,function(){
-      $(this).remove();
-    });
-    $('.down').click(function(){
-      $('html,body').animate({
-        scrollTop: $('#header').outerHeight()
-      },300);
-    });
-    
-    var imgs = [],
-        cover = [
-          '//dn-lay.qbox.me/build/aboutme/images/spiderman_83808a0.jpg',
-          '//dn-lay.qbox.me/build/aboutme/images/sky_15b0c3d.jpg',
-          '//dn-lay.qbox.me/build/aboutme/images/aboutme_90fa789.jpg',
-          '//dn-lay.qbox.me/build/aboutme/images/xjkz_4feed59.png',
-          '//dn-lay.qbox.me/build/aboutme/images/dragon_f4cf073.jpg',
-          '//dn-lay.qbox.me/build/aboutme/images/zishu_73d8bd6.jpg'
-        ];    
-    $('.pic').each(function(index){
-      var $this = $(this),
-          src = $this.find('img').attr('src');
+          <div class="col-sm-3">
+            <div class="thumbnail">
+              <img src="img\opera.png" width="200" height="150">
+              <a><strong><p>Opera</strong></p></a>
+              <a><p>Assistant Product Manager</p></a>
+              <div id="OperaDetail" class="collapse">
+                  <a><p><strong>Type</strong> : Product Manager</p></a>
+                  <a><p>During: 11. 2014 - 01. 2015</p></a>
+              </div>
+              <button type="button" class="btn btn-default btn-lg" data-toggle="collapse" data-target="#OperaDetail">Detail</button>
+              <a href="http://opera.com" target="_blank"></a>
+                  <button class="btn btn-warning btn-lg">View Company</button>
+              </a>
+            </div>
+          </div>
       
-      $this.css('backgroundImage','url(' + src + ')')
-            .find('img').hide();
-      imgs.push({
-        cover : cover[index],
-        thumb : src
-      })
-    });
-    $('.pic').click(function(){
-      var index = $(this).index();
-      var aaa = gallery(imgs,index);
-    });
-  });
-</script>
-<div class="tongji">
-<script type="text/javascript">
-  var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-  document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F0f6bfc1dac208f86e5effd5f2d59027d' type='text/javascript'%3E%3C/script%3E"));
-</script>
-</div>
-</body>
-</html>
+          <div class="col-sm-3">
+              <div class="pokeball">
+              <div class="top">
+              <div class="middle_circle">
+              <div class="white_in"></div>
+              </div>
+              </div>
+              <div class="bottom">
+              <br>
+              <br />
+              <a href="https://myweb33.firebaseapp.com/About/#/bored" target="_blank">Click me</a>
+              </div>
+              </div>
+          </div>
+          
+      </section>
+
+      <!-- Project section -->
+      <section id="work">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 text-center">
+                      <h2>Projects</h2>
+                      <br>
+                      <br />
+                  </div>
+              </div>
+          <ul class="exp">
+          <li>
+              <h4>
+                Pressure Ulcer Image Process Software（2016.05）
+                  <a href="https://github.com/Shanshan-IC/MscProject/tree/master/PUimageV.1.0" target="_blank"><i class="fa fa-link" aria-hidden="true"></i>View Code</a>
+                  <a href="https://github.com/Shanshan-IC/MscProject/tree/master/PUimageV.1.0/VB%20version" target="_blank"><i class="fa fa-link" aria-hidden="true"></i>Demo</a>
+              </h4>
+              Emphasis is placed on implementing a range of image processing to the software and image analysis techniques using a standard software package.
+              <br/>
+              <img src="img/PUimage.jpg">
+          </li>
+        </ul>
+
+        <ul class="exp">
+          <li>
+              <h4>
+                the Computing Science Learning Website（2016.03）
+                  <a href="https://github.com/Shanshan-IC/MyWebsite" target="_blank"><i class="fa fa-link" aria-hidden="true"></i>View Code</a>
+                  <a href="https://myweb33.firebaseapp.com/" target="_blank"><i class="fa fa-link" aria-hidden="true"></i>Demo</a>
+              </h4>
+              It’s based on Bootstrap, and the idea is to integrate famous computing learning websites resources to this web. However, it hasn’t been finished due to the schedule.
+              And an amazing part is “<a href="https://myweb33.firebaseapp.com/explore.html">explore part</a>”. 
+              <br/>
+              <img src="img/CSweb.png">
+          </li>
+        </ul>
+
+        <ul class="exp">
+          <li>
+              <h4>
+                Personal Resume based on html and css（2016.06）
+                  <a href="https://github.com/Shanshan-IC/resume" target="_blank"><i class="fa fa-link" aria-hidden="true"></i>View Code</a>
+                  <a href="https://resume33.firebaseapp.com/" target="_blank"><i class="fa fa-link" aria-hidden="true"></i>Demo</a>
+              </h4>
+              Personal online resume
+              <br/>
+              <img src="img/resume.png">
+          </li>
+        </ul>
+       </div>
+      </section>
+
+      <!-- Skill Section -->
+       <section class="success" id="skill">
+          <div class="container">
+              <div class="row">
+              <div class="col-lg-12 text-center">
+                      <h2>Skills</h2>
+                      <br>
+                      <br />
+              </div>
+              </div>
+
+              <div class="base">
+
+  <div class="col-sm-3">
+  <section class="model-2">
+    <div class="graph">C++</div><span tooltip="70%" class="tooltip">C++</span>
+  </section>
+  </div>
+  <div class="col-sm-1">
+  </div>
+
+  <div class="col-sm-3">
+  <section class="model-5">
+    <div class="graph">JAVA</div><span tooltip="40%" class="tooltip">JAVA</span>
+  </section>
+  </div>
+  <div class="col-sm-1">
+  </div>
+
+  <div class="col-sm-3">
+  <section class="model-5">
+    <div class="graph">Swift</div><span tooltip="50%" class="tooltip">Swift</span>
+  </section>
+  </div>
+  <div class="col-sm-1">
+  </div>
+
+  <div class="col-sm-3">
+  <section class="model-1">
+    <div class="graph">HTML5</div><span tooltip="70%" class="tooltip">HTML5</span>
+  </section>
+  </div>
+  <div class="col-sm-1">
+  </div>
+
+  <div class="col-sm-3">
+  <section class="model-1">
+    <div class="graph">CSS</div><span tooltip="70%" class="tooltip">CSS</span>
+  </section>
+  </div>
+  <div class="col-sm-1">
+  </div>
+
+  <div class="col-sm-3">
+  <section class="model-3">
+    <div class="multi-graph"><div class="graph">JavaScript</div>
+      <div data-name="jQuery" class="graph jQuery"> </div>
+      <div data-name="javaScript" class="graph javaScript"></div>
+    </div>
+    </section>
+  </div>
+
+  </div>
+  </div>
+  </section>
+
+  <!-- Achievement Section -->
+  <section id="achievement">
+      <div class="container">
+          <div class="col-lg-12 text-center">
+             <h2>Achievements</h2>
+          </div>
+      </div>
+
+      <section class="cert">
+    <div class="paper">
+      <div class="title"><p>Congratulations!</p></div>
+      <span class="text1">Honorable Mention in The Interdisciplinary Contest in Modeling</span>
+      <span class="text1">Ranked 289/3453 in 2014 Ace-Manager Global Business</span>
+      <span class="text1">Participation prize in National College Mathematical Modeling Contest</span>
+      <span class="text1">Third-class scholarship of Wuhan University twice (No. 6 in my grade)</span>
+      <span class="text1">Second prize in National College Mathematical Contest</span>
+      <span class="text1">SU YiGuang Scholarship of Wuhan University</span>
+      <span class="text1">Basic Science Scholarship for freshmen: only 1% students got it</span>
+      <span class="text1">Excellent Youth Volunteerism:Visit children with autism</span>
+      <span class="text1">Performance in Kaggle.com: 2677th /362764(Current), 1581st(Highest)</span>
+    </div>
+    <div class="medal"></div>
+    <div class="ribbon1"></div>
+    <div class="ribbon2"></div>
+  </section>
+
+
+  </section>
+
+      <!-- Contact Section -->
+      <section class="success" id="contact">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 text-center">
+                      <h2>Contact Me</h2>
+                  </div>
+              </div>
+              <section>
+    <ul id='services'>
+      <p>Staying alone is a form of art, since I could connect with myself -- My bset friend forever.</p>
+      <p>And I also a team player, since we have the same enemy -- Bugs, and share our differences.</p>
+      <li>
+        <a href="https://github.com/Shanshan-IC" target="_blank">
+        <div> <img src="img/github-with-circle.svg" /></div>
+        <span>Github</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/shanshan-fu-549230107?trk=hp-identity-name" target="_blank">
+        <div> <img src="img/linkedin-with-circle.svg" /></div>
+        <span>LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/fu.shanshan.33" target="_blank">
+        <div> <img src="img/facebook-with-circle.svg" /></div>
+        <span>Facebook</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/Sunny_433" target="_blank">
+        <div> <img src="img/twitter-with-circle.svg" /></div>
+        <span>Twitter</span>
+        </a>
+      </li>
+
+    </ul>
+  </section>
+          </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="text-center">
+          <div class="footer-below">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-12">
+                          Copyright &copy; Shanshan Fu 2016
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/loading.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/freelancer.min.js"></script>
+
+
+
+  </body>
+
+  </html>
